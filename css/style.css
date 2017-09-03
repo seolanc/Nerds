@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.item-about {
+    display: none;
+}
+ /* стили для хедера */
+header {
+        width: 1440px;
+        height: 355px;
+    
+        background-color: #eeeeee;
+        margin: 0px auto;
+}
+.logo {
+        float: left;
+        margin-top: 50px;
+        margin-left: 140px;
+    
+}
+
+header nav {
+        display: inline-block; 
+       align-content: center;
+       margin-top: 50px;
+       margin-left: 120px;
+}
+header h1 {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 55px;
+
+}
+header li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 50px;
+        font-size: 16px;
+}
+header li:last-child {
+padding-left: 285px;
+}
+header a:link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content {
+        width: 1440px;
+        margin: 0px auto;
+        border: 2px solid green; 
+     
+}
+    /* Стили для фильтра */
+.filter {
+    width: 30%;
+     border: 2px solid red; 
+     float: left;
+     background-color: #ffffff;
+}
+.filter-group {
+    width: 100%;
+    float: left;
+    font-family: "roboto" ;
+}
+
+.catalog {
+    width: 70%;
+     border: 2px solid yellow; 
+     float: right;     
+}
+.map {
+ width: 100%;
+  background-image: url(../img/map.jpg);
+}
+footer {
+
+    width: 1440px;
+    background-color: #ffffff;
+}
+.browser {
+    width: 360px;
+    height: 40px;
+    background-color: #e9e9e9;
+   
+    border-radius: 5px 5px 0px 0px;
+}
+.browser-style {
+    width: 16px;
+    display: inline-block;
+    background-color: #ffffff;
+    height: 16px;
+    margin-left: 16px;
+    margin-top: 14px;
+   
+    border: 1px solid #ffffff; 
+    border-radius: 50%;
+    
+
+}
+.browser:hover {
+    background-color: #4d4d4d;
+}

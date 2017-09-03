@@ -4,16 +4,18 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Nerds shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
  </head>
  <header>
- 	<a class="logo" href="" name="logo" ><img src=""></a>
+ 	<a class="logo" href="" name="logo" ><img src="img/nerds-logo.png"></a>
  	<nav>
  		<ul>
  			<li><a href="index.html">студия</a></li>
  			<li><a href="">клиенты</a></li>
  			<li><a href="">магазин</a></li>
  			<li><a href="">контакты</a></li>
- 			<li><a href="">корзина</a></li>
+ 			<li><a href=""><img src="img/cart-icon.png" alt="">корзина</a></li>
  		</ul>
  	</nav>
  	<h1>Магазин готовых шаблонов</h1>
@@ -21,23 +23,37 @@
  <main class="content">
  		<div class="filter">
  			<form>
- 				<h>стоимость</h2>
+				 <div class="filter-group">
+					<h2>стоимость</h2>
  					<input input type="range" min="0" max="15000" step="any">
  					<label for="from">От</label>
  					<input type="text"  id="from" name="">
  					<label for="up-to">До</label>
  					<input type="text" id="up-to" name="">
- 				<h2>особенности</h2>
-	 				<input type="radio" name="">адаптивная</input>
-	 				<input type="radio" name="">фиксированая</input>
-	 				<input type="radio" name="">резиновая</input>
-	 			<h2>особенности:</h2>
-	 				<input type="checkbox" name="">слайдер</input>
-	 				<input type="checkbox" name="">Блок преимуществ</input>
-	 				<input type="checkbox" name="">Новости</input>
-	 				<input type="checkbox" name="">Галерея</input>
-	 				<input type="checkbox" name="">Корзина</input>
-	 			<a class="btn" href="">Показать</a>
+				 </div>
+ 				<div class="filter-group">
+ 					<h2>особенности</h2>
+					<input type="radio" id="radio1" name=""></input>
+					<label for="radio1">адаптивная</label>
+					<input type="radio" id="radio2" name=""></input>
+					<label for="radio2">фиксированая</label>				  
+					<input type="radio" id="radio3" name=""></input>
+					<label for="radio3">резиновая</label>
+				</div>
+				<div class="filter-group">
+	 				<h2>особенности:</h2>
+					 <input type="checkbox" id="chek1" name=""></input>
+					<label for="chek1">слайдер</label>
+					 <input type="checkbox" id="chek2" name=""></input>
+					<label for="chek2">Блок преимуществ</label>
+					 <input type="checkbox" id="chek3" name=""></input>
+					<label for="chek3">Новости</label>
+					 <input type="checkbox" id="chek4" name=""></input>
+					<label for="chek4">Галерея</label>
+					 <input type="checkbox" id="chek5" name=""></input>
+					<label for="chek5">Корзина</label>
+				    <button class="btn" >Показать</button>
+				</div>
 
  			</form>
  		</div>
@@ -45,76 +61,101 @@
  			<div class="sort">
  				<b>сортировать</b>
  				<ul>
- 					<li><a href="">по цене</a></li>
- 					<li><a href="">по типу</a></li>
- 					<li><a href="">по названию</a></li>
- 					 <li><a class="arrow-up" href=""></a></li><!-- как тут правильно, может через див   -->
- 					<li><a class="arrow-down" href=""></a></li>
+ 					<li><button>по цене</button></li>
+ 					<li><button>по типу</button></li>
+ 					<li><button>по названию</button></li>
+ 					 <li><button class="arrow-up"><img src="img/icon-up-dir.png" alt=""></button></li>
+ 					<li><button class="arrow-down" ><img src="img/icon-down-dir.png" alt=""></button></li>
  				</ul>
  			</div>
  			<div class="catalog-item">
- 				<div class="browser"></div> <!-- тутт не оч понял как кружочки сделать, на цсс или тут надо добавлять див-->
- 				<img src="">
+ 				<div class="browser">
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+				</div>
+ 				<img src="img/img-sedona.jpg" width="360" height="575">
  				<div class="item-about">
  					<h3>sedona</h3>
  					<p>Информационный сайт для туристов</p>
- 					<a href="">9900 р.</a>
+ 					<button>9900 р.</button>
  				</div>
  			</div>
  			<div class="catalog-item">
- 				<div class="browser"></div> <!-- тутт не оч понял как кружочки сделать, на цсс или тут надо добавлять -->
- 				<img src="">
+ 				<div class="browser">
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+				</div>
+ 				<img src="img/img-pink.jpg" width="360" height="575">
  				<div class="item-about">
  					<h3>sedona</h3>
  					<p>Информационный сайт для туристов</p>
- 					<a href="">9900 р.</a>
+ 					<button>9900 р.</button>
  				</div>
  			</div>
  			<div class="catalog-item">
- 				<div class="browser"></div> <!-- тутт не оч понял как кружочки сделать, на цсс или тут надо добавлять -->
- 				<img src="">
+ 				<div class="browser">
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+				</div>
+ 				<img src="img/img-barbershop.jpg" width="360" height="575">
  				<div class="item-about">
  					<h3>sedona</h3>
  					<p>Информационный сайт для туристов</p>
- 					<a href="">9900 р.</a>
+ 					<button>9900 р.</button>
  				</div>
  			</div>
  			<div class="catalog-item">
- 				<div class="browser"></div> <!-- тутт не оч понял как кружочки сделать, на цсс или тут надо добавлять -->
- 				<img src="">
+ 				<div class="browser">
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+				</div>
+ 				<img src="img/img-mishka.jpg" width="360" height="575">
  				<div class="item-about">
  					<h3>sedona</h3>
  					<p>Информационный сайт для туристов</p>
- 					<a href="">9900 р.</a>
+ 					<button>9900 р.</button>
  				</div>
  			</div>
  			<div class="catalog-item">
- 				<div class="browser"></div> <!-- тутт не оч понял как кружочки сделать, на цсс или тут надо добавлять -->
- 				<img src="">
+ 				<div class="browser">
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+				</div>
+ 				<img src="img/img-aplus.jpg" width="360" height="575">
  				<div class="item-about">
  					<h3>sedona</h3>
  					<p>Информационный сайт для туристов</p>
- 					<a href="">9900 р.</a>
+ 					<button>9900 р.</button>
  				</div>
  			</div>
  			<div class="catalog-item">
- 				<div class="browser"></div> <!-- тутт не оч понял как кружочки сделать, на цсс или тут надо добавлять -->
- 				<img src="">
+ 				<div class="browser">
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+					<div class="browser-style"></div>
+				</div>
+ 				<img src="img/img-kvast.jpg" width="360" height="575">
  				<div class="item-about">
  					<h3>sedona</h3>
  					<p>Информационный сайт для туристов</p>
- 					<a href="">9900 р.</a>
+ 					<button>9900 р.</button>
  				</div>
-  			</div>
- 		</div>
- 		<div class="paginator">
+			</div>
+			<div class="paginator">
  			<ul>
  				<li><a class="active" href="">1</a></li>
  				<li><a class="page" href="">2</a></li>
- 				<li><a class="page" href="">3</a></li><li>
+ 				<li><a class="page" href="">3</a></li>
  				<li><a class="buttton" href="">Следующая</a></li>	
  			</ul>
+ 			</div>
  		</div>
+ 		
  		<div class="map">
   			<div class="contacts">
   				<h3>NERDS DESIGN STUDIO</h3>
@@ -135,7 +176,7 @@
   	</div>
   	<div>
   		<h2>Давайте дружить это выгодно</h2>
-  		<P>Скидка 10% для дру
+  		<p>Скидка 10% для друзей</p>
   	</div>
   </footer>
 </body>
