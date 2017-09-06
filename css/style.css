@@ -1,11 +1,16 @@
+* {
+box-sizing: border-box;
+
+}
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 .item-about {
     display: none;
 }
  /* стили для хедера */
 header {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         width: 1440px;
         height: 355px;
     
@@ -20,6 +25,7 @@ header {
 }
 
 header nav {
+         
         display: inline-block; 
        align-content: center;
        margin-top: 50px;
@@ -29,56 +35,79 @@ header h1 {
         text-align: center;
         margin-top: 80px;
         font-size: 55px;
+        font-weight: 900;
+        line-height: 1;
 
 }
-header li {
+header li  {
         list-style: none;
         display: inline-block;
         padding-left: 50px;
         font-size: 16px;
+        font-weight: 400;
+        line-height: calc(30px/16px);
 }
 header li:last-child {
-padding-left: 285px;
+        padding-left: 285px;
 }
 header a:link {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: calc(30px/16px);
 }
 
 .content {
         width: 1440px;
+        height: 2220px;
         margin: 0px auto;
-        border: 2px solid green; 
+        background-color: green; 
      
 }
     /* Стили для фильтра */
 .filter {
-    width: 30%;
-     border: 2px solid red; 
-     float: left;
-     background-color: #ffffff;
+        width: 30%;
+        height: 2220px;
+        background-color: red;
+        float: left;
+        background-color: #ffffff;
+        display: inline-block;
+        padding-top: 60px;
 }
 .filter-group {
-    width: 100%;
-    float: left;
-    font-family: "roboto" ;
+        width: 100%;
+        float: left;
+        font-family: "Roboto" ;
 }
 
 .catalog {
-    width: 70%;
-     border: 2px solid yellow; 
-     float: right;     
+        width: 70%;
+        height: 2220px;
+        background-color: yellow; 
+        float: left;
+        display: inline-block;
+        padding-left: 120px;
+        padding-top: 60px;    
 }
 .map {
- width: 100%;
-  background-image: url(../img/map.jpg);
+        clear: both;
+        width: 1439px;
+        height: 420px;
+        background-image: url(../img/map.jpg);
+        background-size: contain;
+        
 }
 footer {
-
-    width: 1440px;
-    background-color: #ffffff;
-}
+    clear: both;
+    margin: 0px auto;
+    width: 1439px;
+    height: 420px;
+   background-color: coral;
+   display: inline-block;
+   margin-top: 420px;
+   clear: both;
+    
+}    
 .browser {
     width: 360px;
     height: 40px;
@@ -93,12 +122,35 @@ footer {
     height: 16px;
     margin-left: 16px;
     margin-top: 14px;
-   
-    border: 1px solid #ffffff; 
     border-radius: 50%;
     
 
 }
 .browser:hover {
     background-color: #4d4d4d;
+}
+
+.sort li {
+    display: inline-block;
+    list-style: none;
+}
+.catalog-item {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+b {
+   font-family: "Roboto", Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: 900;
+   line-height: 1;          
+} 
+.contacts {
+    width: 320px;
+    height: 310px;
+    background-color: white;
+    vertical-align: center;
+    margin-left: 140px;
 }
