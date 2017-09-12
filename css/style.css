@@ -12,7 +12,7 @@ body {
 header {
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         width: 1440px;
-        height: 355px;
+        
     
         background-color: #eeeeee;
         margin: 0px auto;
@@ -33,10 +33,11 @@ header nav {
 }
 header h1 {
         text-align: center;
-        margin-top: 80px;
+        background-color: #eeeeee;
         font-size: 55px;
         font-weight: 900;
         line-height: 1;
+        padding: 100px;
 
 }
 header li  {
@@ -55,15 +56,51 @@ header a:link {
         font-size: 16px;
         font-weight: 400;
         line-height: calc(30px/16px);
+        
 }
-
 .content {
         width: 1440px;
-        height: 2220px;
+       
         margin: 0px auto;
-        background-color: green; 
+        background-color: #fff; 
      
 }
+/* слайдер */
+.slider {
+        width: 100%;
+        height: 415px;
+        background-image:  url(../img/slide1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+
+}
+.item-active{
+        width: 420px;   
+        height: 390px;
+        margin-left: 140px;
+
+}
+.item-active h1{
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 1;
+        padding: 0px;
+     
+}
+.item-active p{
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: calc(24px/16px);
+}  
+   
+.item {
+        display: none;
+}
+
+
     /* Стили для фильтра */
 .filter {
         width: 30%;
@@ -80,7 +117,7 @@ header a:link {
         font-family: "Roboto" ;
 }
 
-.catalog {
+.catalog-shop{
         width: 70%;
         height: 2220px;
         background-color: yellow; 
@@ -88,6 +125,83 @@ header a:link {
         display: inline-block;
         padding-left: 120px;
         padding-top: 60px;    
+}
+.catalog{
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 3px solid lightgray;
+        
+}
+.catalog section{
+        display: inline-block;
+        width: 300px;
+        height: 430px;
+        margin-top: 80px;
+        margin-left: 130px;
+}
+h3 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: calc(30px/24px);
+}      
+.features{
+        width: 60%;
+        display: inline-block;
+        float: left;
+        padding-left: 140px;
+        margin-top: 100px;
+
+}
+.features h2 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 1;
+       
+}
+.features h4 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: calc(24px/16px);
+}
+.percent {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: calc(45px/10.06px);
+        display: block;
+        
+       
+
+}
+.stats div{
+        display: inline-block;
+        width: 33%;
+        float: right;
+}
+.Examples {
+        
+        width: 100%;
+        padding: 50px 0px;
+      
+        clear: both;
+        border-top: 3px solid lightgray;
+        border-bottom: 3px solid lightgray;
+        
+       
+}
+.Examples a{
+        padding-left: 150px;
+       
+}
+.stats {
+        display: inline-block;
+        width: 40%;
+        float: right;
+        margin-top: 100px;
+        padding-bottom: 100px;
 }
 .map {
         clear: both;
@@ -98,14 +212,11 @@ header a:link {
         
 }
 footer {
-    clear: both;
-    margin: 0px auto;
-    width: 1439px;
-    height: 420px;
-   background-color: coral;
-   display: inline-block;
-   margin-top: 420px;
-   clear: both;
+     width: 1440px;
+     height: 150px;
+     margin: 0px auto;
+     background-color: #e9e9e9;
+     clear: both;
     
 }    
 .browser {
@@ -148,9 +259,38 @@ b {
    line-height: 1;          
 } 
 .contacts {
-    width: 320px;
-    height: 310px;
-    background-color: white;
-    vertical-align: center;
-    margin-left: 140px;
+                width: 320px;
+                height: 310px;
+                background-color: white;
+                vertical-align: middle;
+                margin-left: 140px;
+                margin-top: 60px;
+}
+.social-btn {
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+       margin-left: 140px;
+       margin-top: 60px;
+      
+}
+.social-btn a{
+        text-decoration: none;
+        padding-left: 100px;
+}
+.ftr-desc{
+        display: inline-block;
+        float: right;
+        width: auto;
+        vertical-align: middle;
+        margin-right: 400px;
+        margin-top: 60px;
+
+       
+}
+footer h2{
+        display: inline;
+        text-align: right;
+        vertical-align: middle;
+
 }
