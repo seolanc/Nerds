@@ -14,9 +14,9 @@
  	<a class="logo" href="" name="logo" ><img src="img/nerds-logo.png"></a>
  	<nav>
  		<ul>
- 			<li><a href="index.html">студия</a></li>
+ 			<li><a href="index.html" >студия</a></li>
  			<li><a href="">клиенты</a></li>
- 			<li><a href="">магазин</a></li>
+ 			<li><a href="" class="active">магазин</a></li>
  			<li><a href="">контакты</a></li>
  			<li><a href=""><img src="img/cart-icon.png" alt="">корзина</a></li>
  		</ul>
@@ -28,33 +28,54 @@
  			<form>
 				 <div class="filter-group">
 					<h2>стоимость</h2>
- 					<input input type="range" min="0" max="15000" step="any">
- 					<label for="from">От</label>
- 					<input type="text"  id="from" name="">
- 					<label for="up-to">До</label>
- 					<input type="text" id="up-to" name="">
+
+ 					<input class="range" input type="range" min="0" max="15000" step="any">
+					<div class="in-group">
+						 <label for="from">От</label>
+						 <input type="text"  id="from" name="">
+					</div> 
+					<div class="in-group">
+						<label for="up-to">До</label>
+						 <input type="text" id="up-to" name="">
+					 </div> 
 				 </div>
  				<div class="filter-group">
  					<h2>особенности</h2>
-					<input type="radio" id="radio1" name=""></input>
-					<label for="radio1">адаптивная</label>
-					<input type="radio" id="radio2" name=""></input>
-					<label for="radio2">фиксированая</label>				  
-					<input type="radio" id="radio3" name=""></input>
-					<label for="radio3">резиновая</label>
+					<div class="ch-group">
+						<input type="radio" id="radio1" name=""></input>
+						<label for="radio1">адаптивная</label>
+					</div>
+					<div class="ch-group">
+						<input type="radio" id="radio2" name=""></input>
+						<label for="radio2">фиксированая</label>
+					</div>
+					<div class="ch-group">				  
+						<input type="radio" id="radio3" name=""></input>
+						<label for="radio3">резиновая</label>
+					</div>
 				</div>
 				<div class="filter-group">
-	 				<h2>особенности:</h2>
-					 <input type="checkbox" id="chek1" name=""></input>
-					<label for="chek1">слайдер</label>
-					 <input type="checkbox" id="chek2" name=""></input>
-					<label for="chek2">Блок преимуществ</label>
-					 <input type="checkbox" id="chek3" name=""></input>
-					<label for="chek3">Новости</label>
-					 <input type="checkbox" id="chek4" name=""></input>
-					<label for="chek4">Галерея</label>
-					 <input type="checkbox" id="chek5" name=""></input>
-					<label for="chek5">Корзина</label>
+					 <h2>особенности:</h2>
+					<div class="ch-group">				  
+						<input type="checkbox" id="chek1" name=""></input>
+						<label for="chek1">слайдер</label>
+					</div>
+					<div class="ch-group">	
+						<input type="checkbox" id="chek2" name=""></input>
+						<label for="chek2">Блок преимуществ</label>
+					</div>	
+					<div class="ch-group">
+						<input type="checkbox" id="chek3" name=""></input>
+						<label for="chek3">Новости</label>
+					</div>
+					<div class="ch-group">
+					 	<input type="checkbox" id="chek4" name=""></input>
+						<label for="chek4">Галерея</label>
+					</div>
+					<div class="ch-group">
+						<input type="checkbox" id="chek5" name=""></input>
+						<label for="chek5">Корзина</label>
+					</div>
 				    <button class="btn" >Показать</button>
 				</div>
 
@@ -151,10 +172,10 @@
 			</div>
 			<div class="paginator">
  			<ul>
- 				<li><a class="active" href="">1</a></li>
+ 				<li><a class="active-page" href="">1</a></li>
  				<li><a class="page" href="">2</a></li>
  				<li><a class="page" href="">3</a></li>
- 				<li><a class="buttton" href="">Следующая</a></li>	
+ 				<li><a class="button-next" href="">Следующая</a></li>	
  			</ul>
  			</div>
  		</div>
@@ -173,11 +194,11 @@
   </main> 
   <footer>
   	<div class="social-btn">
-  		<a href="">vk</a>
-  		<a href="">FC</a>
-  		<a href="">IN</a>
+  		<a href=""><img src="img/vk-icon.png" alt="vk"></a>
+  		<a href=""><img src="img/fb-icon.png" alt="FC"></a>
+  		<a href=""><img src="img/insta-icon.png" alt="IN"></a>
   	</div>
-  	<div .class="ftr-desc">
+  	<div class="ftr-desc">
   		<h2>Давайте дружить это выгодно</h2>
   		<p>Скидка 10% для друзей</p>
   	</div>
