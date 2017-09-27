@@ -37,7 +37,7 @@ header h1 {
         font-size: 55px;
         font-weight: 900;
         line-height: 1;
-        padding: 100px;
+        
 
 }
 header li  {
@@ -75,10 +75,7 @@ nav img{
 .slider {
         width: 100%;
         height: 415px;
-        background-image:  url(../img/slide1.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
+        
 
 }
 .slider button {
@@ -91,36 +88,80 @@ nav img{
         font-weight: bold;    
         border-radius: 3px;
         text-transform: uppercase;
-        margin-top: 60px;
+        margin-top: 70px;
+        margin-left: 200px;
 }
-.item-active{
-        width: 420px;   
-        height: 390px;
-        margin-left: 140px;
+.slide{
+          
+        height: 415px;
+        margin-left: 50px;
         font-size: 16px;
+        background-image:  url(../img/slide1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
 
 }
-.item-active h1{
+.slide h1{
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 55px;
         font-weight: 900;
         line-height: 1;
-        padding: 0px;
-        padding-top: 25px;
+        width: 700px;
      
 }
-.item-active p{
+.slide p{
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: calc(24px/16px);
+        width: 350px;
+        margin-left: 185px;
 }  
    
-.item {
+.slide {
         display: none;
 }
+.slide:nth-child(1) {
+        display: block;
+         height: 415px;
+        margin-left: 50px;
+        font-size: 16px;
+        background-image:  url(../img/slide1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+}
+.slide:nth-child(2) {
+        
+         height: 415px;
+        margin-left: 50px;
+        font-size: 16px;
+        background-image:  url(../img/slide2.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+}
+.slide:nth-child(3) {
+        
+         height: 415px;
+        margin-left: 50px;
+        font-size: 16px;
+        background-image:  url(../img/slide3.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+}
 
-
+#btn1:checked ~ .slide:nth-child(1) {
+        display: block;
+}
+#btn2:checked ~ .slide:nth-child(2) {
+        display: block;
+}
+#btn3:checked ~ .slide:nth-child(3) {
+        display: block;
+}
     /* Стили для фильтра */
 .filter {
         width: 30%;
@@ -365,7 +406,7 @@ footer h2{
 }
 .radio-btn{
         position: absolute;
-            top: 500px;
+            top: 450px;
             left: 700px;
 
 }
