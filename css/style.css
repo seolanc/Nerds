@@ -36,7 +36,8 @@ header h1 {
         background-color: #eeeeee;
         font-size: 55px;
         font-weight: 900;
-        line-height: 1;
+        line-height: 5;
+
         
 
 }
@@ -71,7 +72,7 @@ nav img{
         background-color: #fff; 
      
 }
-/* слайдер */
+                                                                     /* слайдер */
 .slider {
         width: 100%;
         height: 415px;
@@ -162,7 +163,7 @@ nav img{
 #btn3:checked ~ .slide:nth-child(3) {
         display: block;
 }
-    /* Стили для фильтра */
+                                                                                      /* Стили для фильтра */
 .filter {
         width: 30%;
         height: 2220px;
@@ -445,14 +446,24 @@ font-size: 0px;
         padding: 10px 0px;
 
 }
+.ch-group1 {
+        display: block;
+        padding: 10px 0px;
+
+}
 .filter-group {
+        position: relative;
         width: 70%;
         margin: 0px auto;
         margin-left: 70px;
 }
-.in-group {
-        display: inline-block;
-        padding: 20px 0px; 
+.filter-range {
+        position: relative;
+        width: 70%;
+        margin: 0px auto;
+        margin-left: 70px;
+}
+
 }
 .in-group input {
         width: 100px;
@@ -470,3 +481,60 @@ font-size: 0px;
         background-color: inherit;
         cursor: pointer;
 }
+input {
+        display: none;
+}
+.range {
+        display: block;
+}
+.in-group {
+        display: inline-block;
+        padding: 20px 0px; 
+}
+.in-group input{
+        display: inline-block;
+        width: 95px;
+}
+
+.ch-group label{
+        
+        position: relative; 
+        padding: 10px 40px;   
+}      
+.ch-group label:after {
+        content: "";
+        position: absolute;
+        top:7px;
+        left:0;
+        width: 20px; 
+        height: 20px;
+        border: 4px solid gray;
+        
+}
+.ch-group1 label{
+        
+        position: relative; 
+        padding: 10px 40px;   
+}
+.ch-group1 label:after {
+        content: "";
+        position: absolute;
+        top:7px;
+        left:0;
+        width: 20px; 
+        height: 20px;
+        border: 4px solid gray;
+        border-radius: 50%;
+}  
+
+}
+ input:checked + .ch-group1 label:before{
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border: 4px solid gray;
+        border-radius: 50%;
+} 
