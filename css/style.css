@@ -87,7 +87,6 @@ header li:last-child {
         font-weight: 900;
         line-height: 1;
         width: 700px;
-     
 }
 .slide p{
         font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -119,7 +118,6 @@ header li:last-child {
         height: 30px;
         margin: 0px auto;
         z-index: 99;
-
 }
 .slider-control label {
         position: absolute;
@@ -146,7 +144,6 @@ header li:last-child {
 .slider-control label:nth-child(3){      
         left: 120px;
 }
-
 #btn1:checked ~.slider-control label:nth-child(1):after,
 #btn2:checked ~.slider-control label:nth-child(2):after,
 #btn3:checked ~.slider-control label:nth-child(3):after {
@@ -159,9 +156,168 @@ header li:last-child {
         border: 2px solid gray;
         border-radius: 50%;
 }
-
 #btn1:checked ~ .slides>.slide:nth-child(1),
 #btn2:checked ~ .slides>.slide:nth-child(2),
 #btn3:checked ~ .slides>.slide:nth-child(3) {
         display: block;
+}
+                                                                                /* Контент */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 1120px;
+        margin-top: 50px;
+        border-bottom: 3px solid lightgray;
+        padding-bottom: 50px;
+}
+.catalog-item {
+        margin-left: 10px;
+        width: 300px;
+}
+.about {
+        width: 1120px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 3px solid lightgray;
+}
+.features{
+        display: block;
+        margin-right: 100px;
+        
+        
+}
+.features h2 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 1;
+       
+}
+.features h4 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: calc(24px/16px);
+}
+.stats {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+        margin-bottom: 50px;
+        
+}
+.percent-stat div {
+        display: inline-block;
+}
+.percent {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: calc(45px/10.06px);
+        display: block;
+        
+}
+.Examples {
+        display: flex;
+        justify-content: space-evenly; 
+        width: 1120px;
+        margin: 50px 0px;
+}
+
+.map {
+        position: relative;
+        clear: both;
+        width: 1439px;
+        height: 420px;
+        background-image: url(../img/map.jpg);
+        background-size: contain;
+        
+}
+b {
+   font-family: "Roboto", Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: 900;
+   line-height: 1;          
+} 
+.contacts {
+        position: absolute;
+        top: 60px;
+        left: 165px;
+        width: 320px;
+        height: 310px;
+        background-color: white;
+        text-align: center;
+                
+} 
+.contacts button {
+    display: block;
+    width: 236px;
+    height: 50px;
+    text-align: center;
+    background-color: #fb565a;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    margin: 35px auto;
+}
+.button {
+      display: block;
+    width: 170px;
+    height: 34px;
+    text-align: center;
+    padding-top: 16px;
+    
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+.red{
+        background: #fb565a;
+}
+.green {
+        background: #00ca74;
+}
+.yellow {
+        background: #efc849;
+}
+.active {
+        border-bottom: 3px solid #fb565a  ;
+}
+footer {
+        display: flex;
+     width: 1440px;
+     height: 150px;
+     margin: 0px auto;
+     background-color: #fff;
+     clear: both;
+    
+}  
+.ftr-desc{
+       
+        float: right;
+        width: auto;
+        vertical-align: middle;
+        margin-right: 300px;
+        margin-top: 60px;
+
+       
+}
+footer h2{
+        display: inline;
+        text-align: right;
+        vertical-align: middle;
+        font-size: 36px;
+
+}  
+.social-btn {
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-content: center;
 }
