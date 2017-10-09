@@ -31,61 +31,71 @@
  <main class="content">
 	 <div class="main-wraper">
 		<div class="filter">
- 			<form>
-				 <div class="filter-range">
-					<h2>стоимость</h2>
+                <aside class="cost">
+                  <h3>Стоимость</h3>
+                 <form action="">
+                  <input class="band" type="range" min="0" max="15000" id="band"> 
+                  <label for="band"></label>
+                  <div class="beginning">
+                      <label for="0">от</label>
+                      <input type="text" name="start" placeholder="0">
+                  </div>
+                  <div class="finish">
+                      <label for="15000">до</label>
+                      <input type="text" name="end" placeholder="15 000"> 
+                  </div>
+                 </form>
+                </aside>
+                <aside class="net">
+                  <form action="">
+                   <h3> Сетка: </h3>
+                    <div class="checkbox-group">
+                    <div class="ch-radio">
+                      <input type="radio" id="radio-1" name="two-2" checked>
+                      <label for="radio-1">Адаптивная</label>
+                   </div>
+                   <div class="ch-radio">
+                     <input type="radio" id="radio-2" name="two-2">
+                     <label for="radio-2">Фиксированная</label>
+                   </div>
+                   <div class="ch-radio">
+                     <input type="radio" id="radio-3" name="two-2">
+                     <label for="radio-3">Резиновая</label>
+                   </div>
+                  </div>
+                 </form>
+                </aside>
+                <aside class="features">
+                   <form action="">
+                   <h3>Особенности:</h3>
+                     <div class="checkbox-group">
+                      <div class="ch-gr">
+                        <input type="checkbox" id="ch-1" checked>
+                        <label for="ch-1">Слайдер</label>
+                      </div>
+                      <div class="ch-gr">
+                        <input type="checkbox" id="ch-2">
+                        <label for="ch-2">Блок преимуществ</label>
+                      </div>
+                        <div class="ch-gr">
+                        <input type="checkbox" id="ch-3" checked>
+                        <label for="ch-3">Новости</label>
+                      </div>
+                      <div class="ch-gr">
+                        <input type="checkbox" id="ch-4">
+                        <label for="ch-4">Галерея</label>
+                      </div>
+                      <div class="ch-gr">
+                        <input type="checkbox" id="ch-5">
+                        <label for="ch-5">Корзина</label>
+                      </div>
+                    </div>
+                 </form>
+                </aside>
+               <button class="show">Показать</button>
+             
 
- 					<input class="range" input type="range" min="0" max="15000" step="any">
-					<div class="in-group">
-						 <label for="from">От</label>
-						 <input type="text"  id="from" name="">
-					</div> 
-					<div class="in-group">
-						<label for="up-to">До</label>
-						 <input type="text" id="up-to" name="">
-					 </div> 
-				 </div>
- 				<div class="filter-group">
- 					<h2>особенности</h2>
-					<div class="ch-group1">
-						<input type="radio" id="radio1" name="radio"></input>
-						<label for="radio1">адаптивная</label>
-					</div>
-					<div class="ch-group1">
-						<input type="radio" id="radio2" name="radio"></input>
-						<label for="radio2">фиксированая</label>
-					</div>
-					<div class="ch-group1">				  
-						<input type="radio" id="radio3" name="radio"></input>
-						<label for="radio3">резиновая</label>
-					</div>
-				</div>
-				<div class="filter-group">
-					 <h2>особенности:</h2>
-					<div class="ch-group">				  
-						<input type="checkbox" id="chek1" name=""></input>
-						<label for="chek1">слайдер</label>
-					</div>
-					<div class="ch-group">	
-						<input type="checkbox" id="chek2" name=""></input>
-						<label for="chek2">Блок преимуществ</label>
-					</div>	
-					<div class="ch-group">
-						<input type="checkbox" id="chek3" name=""></input>
-						<label for="chek3">Новости</label>
-					</div>
-					<div class="ch-group">
-					 	<input type="checkbox" id="chek4" name=""></input>
-						<label for="chek4">Галерея</label>
-					</div>
-					<div class="ch-group">
-						<input type="checkbox" id="chek5" name=""></input>
-						<label for="chek5">Корзина</label>
-					</div>
-				    <button class="btn" >Показать</button>
-				</div>
-
- 			</form>
+ 			
  		</div>
  		<div class="catalog-shop">
  			<div class="sort">
@@ -195,7 +205,7 @@
   				<h3>NERDS DESIGN STUDIO</h3>
   				<p>191186, Санкт_петербург, ул. Б. Конюшенная, д. 19/8</p>
   				<a href="" type="tel798122757575">тел.+7 (812) 275-75-75</a> 
-  				<button>Напишите нам</button>
+  				<button class="write-us" >Напишите нам</button>
   			</div>
 
   			
@@ -213,5 +223,15 @@
   		<p>Скидка 10% для друзей</p>
   	</div>
   </footer>
+  <div class="modal">
+          <h2>Напишите нам</h2>
+          <form action="" method="get"> 
+             <label> Ваше имя: <input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+             <label> Ваш e-mail: <input type="text" name="email" placeholder="Для отправки ответа"></label>
+             <text-area class="let"> Текст письма: <input type="text" name="letter" placeholder="В свободной форме"></text-area>
+             <button class="send">Отправить</button>
+          </form>
+	   </div>
+<script type="text/javascript" src="javascript.js"></script>		
 </body>
 </html>
